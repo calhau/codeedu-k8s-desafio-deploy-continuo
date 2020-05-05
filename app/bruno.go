@@ -26,7 +26,7 @@ func BrunoFunc(w http.ResponseWriter, r *http.Request) {
 	mensagem := greeting("Bruno Leal - Code.education Rocks!")
 	//w.Write([]byte(mensagem))
 	fmt.Fprintf(w, mensagem)
-	// loop()
+	loop()
 	fmt.Println("Fim!")
 }
 
