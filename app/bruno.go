@@ -23,7 +23,7 @@ func greeting(text string) string {
 }
 
 func BrunoFunc(w http.ResponseWriter, r *http.Request) {
-	mensagem := greeting("Bruno Leal - Code.education Rocks!")
+	mensagem := greeting("Projeto rodando com Kubernets e Autoscale!")
 	//w.Write([]byte(mensagem))
 	fmt.Fprintf(w, mensagem)
 	loop()
