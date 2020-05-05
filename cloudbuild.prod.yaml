@@ -31,7 +31,7 @@ steps:
     args:
       - '-c'
       - |
-        sed 's#img-app-go#gcr.io/$PROJECT_ID/k8s-desafio-deploy-continuo:$SHORT_SHA#g' k8s/deployment.yaml > k8s/app/deployment-new.yaml
+        sed 's#img-app-go#gcr.io/$PROJECT_ID/k8s-desafio-deploy-continuo:$SHORT_SHA#g' k8s/deployment.yaml > k8s/deployment-new.yaml
         cat k8s/deployment-new.yaml
   
   - id: "Deployment k8s"
